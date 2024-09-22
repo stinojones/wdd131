@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 100;
+    padding: 0; /* Reset default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5; /* Optional: Add a light background to see the padding effect */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding to move content away from the borders */
+}
+
+header, p, footer {
+    max-width: 800px;
+}
+
+img {
+    width: 200px;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 40px; /* Extra space at the bottom for the footer */
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 80%; /* Control the width of the box */
+    max-width: 800px; /* Optional: Max width for responsiveness */
+    height: 400px; /* Define a fixed height for the box */
+    margin: 20px auto; /* Center the box and add space around it */
+    border: 2px solid #000; /* Add a border to visualize the box */
+    padding: 20px; /* Add padding inside the box */
+    box-sizing: border-box; /* Include padding within the width and height */
+    text-align: left; /* Ensure text is centered inside the box */
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#title
+{
+    color: rgb(42, 135, 197) ;
+}
+
