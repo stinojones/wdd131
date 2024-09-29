@@ -1,60 +1,90 @@
-html, body {
-    height: 100%;
-    margin: 100;
-    padding: 0; /* Reset default padding */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f5f5f5; /* Optional: Add a light background to see the padding effect */
-}
-
+html,
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px; /* Add padding to move content away from the borders */
+  height: 100%;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Add padding to move content away from the borders */
 }
 
-header, p, footer {
-    max-width: 800px;
+header,
+p,
+footer {
+  max-width: 800px;
 }
 
 img {
-    width: 200px;
+  width: 200px;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 footer {
-    margin-top: 40px; /* Extra space at the bottom for the footer */
+  margin-top: 40px; /* Extra space at the bottom for the footer */
 }
 
 .paragraph {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 80%; /* Control the width of the box */
-    max-width: 800px; /* Optional: Max width for responsiveness */
-    height: 400px; /* Define a fixed height for the box */
-    margin: 20px auto; /* Center the box and add space around it */
-    border: 2px solid #000; /* Add a border to visualize the box */
-    padding: 20px; /* Add padding inside the box */
-    box-sizing: border-box; /* Include padding within the width and height */
-    text-align: left; /* Ensure text is centered inside the box */
+  display: flex;
+  flex-direction: column; /* Allow paragraph to stack vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  width: 90%; /* Control the width of the box */
+  max-width: 800px; /* Max width for responsiveness */
+  min-height: 400px; /* Minimum height for the box */
+  margin: 20px auto; /* Center the box and add space around it */
+  border: 2px solid #000; /* Add a border to visualize the box */
+  padding: 20px; /* Add padding inside the box */
+  box-sizing: border-box; /* Include padding within the width and height */
+  text-align: center; /* Center text inside the box */
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-#title
-{
-    color: rgb(42, 135, 197) ;
+#title {
+  color: rgb(42, 135, 197);
 }
+
+/* Dark mode styles */
+.dark {
+  background-color: #121212; /* Dark background for the body */
+  color: #e0e0e0; /* Light text color for better contrast */
+}
+
+.dark html {
+  background-color: #121212; /* Ensure the HTML background is dark */
+}
+
+.dark header,
+.dark p,
+.dark footer {
+  color: #e0e0e0; /* Ensure all text is light */
+}
+
+.dark .paragraph {
+  background-color: #1e1e1e; /* Darker background for the paragraph */
+  border: 2px solid #3a3a3a; /* Slightly lighter border for contrast */
+}
+
+/* Ensure the HTML background is also dark when the dark mode is active */
+.dark, /* This targets the body when .dark class is added */
+.dark html { /* This ensures the html element's background is also dark */
+    background-color: #121212; /* Dark background for the html */
+}
+
 
