@@ -1,0 +1,177 @@
+/* Remove default button styles */
+button#menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: underline;
+  display: block;
+  margin: 0 auto 10px auto; /* Centered and spaced below the header */
+}
+
+button#menu-button:hover {
+  color: #ffdd57; /* Add a hover effect like the links */
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header Styling */
+header {
+  background-color: #5a4fcf;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header:after {
+  content: "Cool Pics 📷";
+  margin-left: 10px;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center the items */
+  background-color: #5a4fcf; /* Change the background color if needed */
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.gallery figure {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #5a4fcf;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+
+/* For smaller devices */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  header {
+    font-size: 1.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  /* Menu button should appear inline when screen is very small */
+  button#menu-button {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Show the navigation links when active */
+#nav-links.active {
+  display: block; /* Change this to flex or grid if needed */
+}
+
+#nav-links {
+  list-style: none; /* Remove bullets from the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Make links take full width */
+}
+
+/* Navigation list items */
+#nav-links li {
+  margin: 0.5rem 0; /* Add vertical spacing between links */
+}
+
+/* Links styling */
+#nav-links a {
+  text-decoration: underline; /* Underline the links */
+  color: white; /* Change link color */
+  text-align: center; /* Center align text */
+  width: 100%; /* Make the link take full width */
+  display: block; /* Make the link a block element for better spacing */
+}
