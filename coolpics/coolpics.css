@@ -175,3 +175,33 @@ footer {
   width: 100%; /* Make the link take full width */
   display: block; /* Make the link a block element for better spacing */
 }
+
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999; /* Increase z-index */
+}
+
+.close-viewer {
+  justify-self: end; /* Align the close button to the top right */
+  color: white; /* Change the text color to white */
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.viewer img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-top: -80px; /* Use a negative value to move the image up */
+}
+
